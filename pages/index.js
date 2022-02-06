@@ -41,13 +41,13 @@ const Page = () => {
                     Work
                 </Heading>
                 <Paragraph>@TO-DO: Text about me...</Paragraph>
-            <Box align="center" my={4}>
-                <NextLink href="/works">
-                    <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                        My portfolio
-                    </Button>
-                </NextLink>
-            </Box>
+                <Box align="center" my={4}>
+                    <NextLink href="/works" path={path}>
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                            My portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
             </Section>
 
         <Section delay={0.2}>
