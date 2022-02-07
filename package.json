@@ -4,8 +4,8 @@
     "description": "Stefan's website",
     "scripts": {
         "dev": "next dev -H 0.0.0.0",
-        "build": "next buiild",
-        "prettier": "prettier -write .",
+        "build": "next build",
+        "prettier": "prettier --write .",
         "lint": "next lint"
     },
     "keywords": [],
@@ -19,7 +19,8 @@
         "framer-motion": "^6.2.4",
         "next": "^12.0.10",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "three": "^0.137.5"
     },
     "devDependencies": {
         "eslint": "^8.8.0",

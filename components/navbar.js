@@ -50,13 +50,13 @@ const Navbar = props => {
       <Container 
         display="flex" 
         p={2} 
-        maxW="container.md" 
+        maxW="container.lg"
         wrap="wrap" 
         align="center" 
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tight'}>
+        <Flex align="center" mr={15}>
+          <Heading as="h1" size="lg" letterSpacing={'normal'}>
             <Logo />
           </Heading>
         </Flex>

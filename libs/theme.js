@@ -4,7 +4,7 @@ import { mode } from "@chakra-ui/theme-tools";
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#ebf8ff', '#202023')(props)
+      bgGradient: mode('radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(113,57,57,1) 100%)', 'black')(props)
     }
   })
 }
@@ -32,15 +32,16 @@ const components = {
 }
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'"
+  heading: "'Montserrat'"
 }
 
 const colors = {
-  glassTeal: '#88ccca'
+  glassTeal: '#88ccca',
+  red2: '#FEB2B2'
 }
 
 const config = {
-  inistialColorMode: 'dark',
+  initialColorMode: 'dark',
   useSystemColorMode: true
 }
 

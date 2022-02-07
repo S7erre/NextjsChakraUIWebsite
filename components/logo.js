@@ -26,7 +26,7 @@ const Logo = () => {
           <Image src={iconImg} width={20} height={20} alt="logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Roundex 1c'
+            fontFamily='Montserrat'
             fontWeight="bold" 
             ml={3}
           />
