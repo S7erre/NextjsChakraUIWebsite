@@ -14,7 +14,16 @@ const Main = ({ children, router }) => {
 
       <Navbar path={router.asPath} />
 
-      <Container maxW="container.md" pt={0}>
+      <Container 
+      maxW="container.md" 
+      pt={0} 
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'column',
+          justifyContent: 'center'
+        }}
+      >
         <NoSsr>
           <Voxel3D />
         </NoSsr>
