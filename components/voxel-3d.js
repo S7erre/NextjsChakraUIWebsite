@@ -15,7 +15,7 @@ const Voxel3D = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(0, 0.5, 0))
+  const [target] = useState(new THREE.Vector3(0, 0, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
@@ -55,10 +55,10 @@ const Voxel3D = () => {
       // 8 -> 6
       const scale = scH * 0.00000000000005 + 3.0
       const camera = new THREE.OrthographicCamera(
-        -scale - 0.1,
+        -scale,
         scale,
         scale,
-        -scale - 0.8,
+        -scale,
         0.1,
         5000
       )
@@ -119,9 +119,13 @@ const Voxel3D = () => {
 
   return (
     <Box ref={refContainer} 
-    className='voxel-3d' 
-    w={[240, 640]}
-    h={[240, 640]}
+    className='voxel-3d'
+    m="auto"
+    mt={['-20px', '60px', '-120px']}
+    mb={['-40px', '-140px', '-200px']}
+    w={[280, 480, 640]}
+    h={[280, 480, 640]}
+    position="relative"
 
     position="relative"
   >
