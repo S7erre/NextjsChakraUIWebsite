@@ -15,7 +15,7 @@ const Voxel3D = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(0, 1, 0))
+  const [target] = useState(new THREE.Vector3(0, 0.5, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
@@ -41,7 +41,6 @@ const Voxel3D = () => {
     if (container && !renderer) {
       const scW = container.clientWidth
       const scH = container.clientHeight
-
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
         alpha: true
@@ -54,14 +53,14 @@ const Voxel3D = () => {
 
       // 640 -> 240
       // 8 -> 6
-      const scale = scH * 0.000000005 + 1.0
+      const scale = scH * 0.00000000000005 + 3.0
       const camera = new THREE.OrthographicCamera(
-        -scale,
+        -scale - 0.1,
         scale,
         scale,
-        -scale - 0.6,
-        0.01,
-        10000
+        -scale - 0.8,
+        0.1,
+        5000
       )
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
