@@ -12,7 +12,10 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Tag,
+  TagLabel,
+  Avatar
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './theme-toggle-button';
@@ -56,11 +59,19 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={15}>
-          <Heading as="h1" size="lg" letterSpacing={'normal'}>
-            <Logo />
+          <Heading as="h1" size="md" letterSpacing={'normal'}>
+            <Tag size='md' colorScheme='black' borderRadius='full'>
+              <Avatar
+                src='/images/stefan.jpg'
+                size='md'
+                name='Stefan Markovic'
+                ml={-3}
+                mr={4}
+              />
+              <TagLabel>Stefan Markovic </TagLabel>
+            </Tag>
           </Heading>
         </Flex>
-
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
