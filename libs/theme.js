@@ -4,7 +4,7 @@ import { mode } from "@chakra-ui/theme-tools";
 const styles = {
   global: props => ({
     body: {
-      bgGradient: mode('radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(113,57,57,1) 100%)', 'black')(props)
+      bgGradient: mode('radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(66,80,200,1) 100%)', 'black')(props)
     }
   })
 }
