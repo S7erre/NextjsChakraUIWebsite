@@ -1,3 +1,0 @@
-﻿# NextjsChakraUIWebsite
-
-Portfolio Website
