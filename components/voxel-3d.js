@@ -84,6 +84,7 @@ const Voxel3D = () => {
 
       let req = null
       let frame = 0
+
       const animate = () => {
         req = requestAnimationFrame(animate)
 

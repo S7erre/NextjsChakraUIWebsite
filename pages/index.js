@@ -11,7 +11,7 @@ const Page = () => {
         <Layout>
             <Container maxWidth="container.lg">
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Hello, I'm a Developer from Sweden.
+                    Hello, I'm a Software Developer / Designer / Music Producer from Gothenburg, Sweden.
                 </Box>
 
                 <Box display={{md: 'flex'}}>
@@ -19,7 +19,7 @@ const Page = () => {
                         <Heading as="h2" variant="page-title">
                             Stefan Markovic
                         </Heading>
-                        <p>S7erre (Software Developer / Music Producer)</p>
+                        <p>Software Developer / Designer / Music Producer</p>
                     </Box>
                     <Box 
                         flexShrink={0} 
@@ -42,7 +42,18 @@ const Page = () => {
                     <Heading as="h3" variant="section-title">
                         Work
                     </Heading>
-                    <Paragraph>@TO-DO: Text about me...</Paragraph>
+                    <Paragraph>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean dui odio, iaculis quis diam sed, tristique semper arcu. 
+                        Sed porttitor tempus nisi et imperdiet. Donec ac orci iaculis, 
+                        commodo ipsum vel, ornare nisi. Phasellus iaculis ante ac lectus euismod, 
+                        eget commodo turpis commodo. 
+                        Suspendisse sit amet cursus turpis, in accumsan purus. 
+                        Praesent non mauris tortor. Ut at mauris in justo molestie ultricies. 
+                        Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. In scelerisque egestas nunc, vel lobortis eros. 
+                        Nulla a dolor malesuada, egestas ex vitae, volutpat lorem. 
+                    </Paragraph>
                     <Box align="center" mt={4}>
                         <NextLink href="/works">
                             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -61,8 +72,16 @@ const Page = () => {
                 Born in Jönköping, Sweden.
                 </BioSection>
                 <BioSection>
+                    <BioYear>2019</BioYear>
+                    Completed the Electrical Engineering Bachelor's Program at Chalmers University of Technology.
+                </BioSection>
+                <BioSection>
                     <BioYear>2021</BioYear>
                     Completed the Information and Communication Engineering Master's Program at Chalmers University of Technology.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022</BioYear>
+                    TBD
                 </BioSection>
             </Section>
             <Section delay={0.3}>
@@ -70,10 +89,9 @@ const Page = () => {
                     I like
                 </Heading>
                 <Paragraph>
-                    Development, Music, Music Production, Sound Design, Blockchain
+                    Development, Technology, Design, Music, Music Production, Sound Design, Blockchain
                 </Paragraph>
             </Section>
-
             </Container>
         </Layout>
     )

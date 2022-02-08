@@ -17,21 +17,18 @@ const LogoBox = styled.span`
   }
 `
 const Logo = () => {
-  const iconImg = `/images/icon${useColorModeValue('', '-dark')}.png`
+  const iconImg = `/images/stefan.jpg`
 
   return(
     <Link href="/">
       <a>
-        <LogoBox>
-          <Image src={iconImg} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='Montserrat'
-            fontWeight="bold" 
-            ml={3}
-          />
-            Stefan Markovic          
-        </LogoBox>
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='Montserrat'
+          fontWeight="bold" 
+          ml={3}
+        />
+        Stefan Markovic
       </a>
     </Link>
   )
