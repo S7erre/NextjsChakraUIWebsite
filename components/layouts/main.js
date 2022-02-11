@@ -15,7 +15,7 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container 
-      maxW="container.md" 
+      maxW="container.sm" 
       pt={0} 
         style={{
           display: 'flex',

@@ -1,10 +1,13 @@
 import NextLink from 'next/link';
-import { Button, Stack, Checkbox, CheckboxGroup, Container, Box, Heading, Image, useColorModeValue, theme } from '@chakra-ui/react';
+import { Button, Stack, Checkbox, CheckboxGroup, Container, Icon, Link, List, SimpleGrid, Box, Heading, Image, useColorModeValue, theme, ListItem } from '@chakra-ui/react';
 import Layout from '../components/layouts/article';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
+import { GridItem } from '../components/grid-item';
+import { IoLogoGithub } from "react-icons/io5";
+import Head from 'next/head';
 
 const Page = () => {
     return ( 
@@ -91,6 +94,21 @@ const Page = () => {
                 <Paragraph>
                     Development, Technology, Design, Music, Music Production, Sound Design, Blockchain
                 </Paragraph>
+            </Section>
+
+            <Section delay={0.4}>
+                <Heading as="h3" variant="section-title">
+                    On the web
+                </Heading>
+                <List>
+                    <ListItem>
+                        <Link href="https://github.com/s7erre" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
+                                @S7erre
+                            </Button>
+                        </Link>
+                    </ListItem>
+                </List>
             </Section>
             </Container>
         </Layout>
